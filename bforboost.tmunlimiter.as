@@ -52,6 +52,6 @@ bool onBindInputEvent(TrackManiaRace@ race, BindInputEvent@ inputEvent, uint eve
 
 void onTick(TrackManiaRace@ race) {
     if (boosting && getGroundContacts(race) > 0) {
-        applyLocalForce(race, Vec3(100, 0, boost_strength));
+        applyLocalForce(race, Vec3(0, 0, boost_strength));
     }
 }
